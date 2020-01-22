@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Survay Form</title>
+  </head>
+  <body>
+    <h1>freeCodeCamp Survey Form</h1>
+    <p class="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+    <form action="#">
+      <div class="form-group">
+        <label>Name</label>
+        <input
+          type="text"
+          name="txtName"
+          class="form-control"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input
+          type="email"
+          name="txtEmail"
+          class="form-control"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label>Age (optional)</label>
+        <input
+          type="number"
+          name="txtAge"
+          class="form-control"
+          placeholder="Enter your age"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label>Which option best describes your current role?</label>
+        <select class="form-control">
+          <option disabled selected value>Select current role</option>
+          <option>Student</option>
+          <option>Full time job</option>
+          <option>Full time learner</option>
+          <option>Prefer not to say</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Would you recommend freeCodeCamp to a friend</label>
+        <label
+          ><input
+            type="radio"
+            class="input-radio"
+            value="Definitely"
+            checked
+          />Definitely</label
+        >
+        <label
+          ><input type="radio" class="input-radio" value="Definitely" />May
+          be</label
+        >
+        <label
+          ><input type="radio" class="input-radio" value="Definitely" />Not
+          sure</label
+        >
+      </div>
+      <div class="form-group">
+        <label>What is your favorite feature of freeCodeCamp?</label>
+        <select class="form-control">
+          <option disabled selected value>Select an option</option>
+          <option>Challenges</option>
+          <option>Projects</option>
+          <option>Community</option>
+          <option>open source</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label
+          >What would you like to see improved?<span
+            ><p class="clue">(Check all that apply)</p></span
+          ></label
+        >
+        <label
+          ><input type="checkbox" class="input-checkbox" />Front-end
+          Projects</label
+        >
+        <label
+          ><input type="checkbox" class="input-checkbox" />Back-end
+          Projects</label
+        >
+        <label
+          ><input type="checkbox" class="input-checkbox" />Data
+          Visualization</label
+        >
+        <label
+          ><input type="checkbox" class="input-checkbox" />Challanges</label
+        >
+        <label
+          ><input type="checkbox" class="input-checkbox" />Open Source
+          Community</label
+        >
+        <label
+          ><input type="checkbox" class="input-checkbox" />Gitter help
+          rooms</label
+        >
+        <label><input type="checkbox" class="input-checkbox" />Videos</label>
+        <label
+          ><input type="checkbox" class="input-checkbox" />City Meetups</label
+        >
+        <label><input type="checkbox" class="input-checkbox" />Wiki</label>
+        <label><input type="checkbox" class="input-checkbox" />Forum</label>
+        <label
+          ><input type="checkbox" class="input-checkbox" />Additional
+          Courses</label
+        >
+      </div>
+      <div class="form-group">
+        <label>Any comments or suggestions?</label>
+        <textarea
+          class="input-textarea"
+          placeholder="Enter your comment here..."
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="submit-button">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
